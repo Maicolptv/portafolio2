@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Cyberpunk | Frontend Developer & UI/UX Designer</title>
+
+    <meta name="description"
+        content="Portfolio profesional con diseño cyberpunk, responsive, optimizado para SEO, desarrollado con HTML5, CSS3, Bootstrap y JavaScript.">
+
+    <meta name="keywords"
+        content="Portfolio, Frontend Developer, UI UX, Bootstrap, JavaScript, HTML5, CSS3, SEO">
+
+    <meta name="author" content="Erolaeny Jimenez">
+
+    <link rel="icon" href="./img/erocv.jpeg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- MATRIX CANVAS -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg fixed-top cyber-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold neon-text" href="#">
+                ⚡ CyberPortfolio
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span>
+                    <i class="fas fa-bars text-light"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stack">Stack</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videos">Videos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <button id="themeToggle" class="btn btn-theme">
+                            🌙 Dark Mode
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="hero" class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-5">
+
+                <div class="col-lg-7">
+
+                    <span class="hero-badge">
+                        🚀 Frontend Developer & UI/UX Designer
+                    </span>
+
+                    <h1 class="hero-title mt-3">
+                        Daisy Jimenez
+                    </h1>
+
+                    <p class="hero-description">
+                                    Desarrolladora de paginas web, Webapps, Api, Aplicaciones Móviles <i class="fa-brands fa-android"></i> <i class="fa-brands fa-apple"></i>, contáctame y me aseguraré de crear lo que necesites.
+                    </p>
+                    <p class="hero-description">
+                            Matricula: 23-SISN-8-069
+                    </p>
+                    
+                    <div class="hero-buttons mt-4">
+
+                        <a href="#projects" class="btn cyber-btn">
+                            ⚡ Ver Proyectos
+                        </a>
+
+                        <a href="#contact" class="btn cyber-btn-outline">
+                            📩 Contactarme
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 text-center">
+
+                    <img src="./img/erocv.jpeg"
+                        class="hero-profile"
+                        alt="Foto de perfil">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STACK ================= -->
+
+    <section id="stack" class="section-padding">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>🛠 Stack Tecnológico</h2>
+                <p>Tecnologías principales</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="tech-card">
+                        <i class="fa-brands fa-html5"></i>
+                        <h5>HTML5</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="tech-card">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h5>CSS3</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="tech-card">
+                        <i class="fa-brands fa-js"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="tech-card">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+
+    <section id="projects" class="section-padding">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>🔥 Proyectos</h2>
+                <p>Web · Apps · Diseño</p>
+            </div>
+
+            <div class="text-center mb-5">
+
+                <button class="filter-btn active" data-filter="all">
+                    Todos
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+                    Web
+                </button>
+
+                <button class="filter-btn" data-filter="app">
+                    Apps
+                </button>
+
+                <button class="filter-btn" data-filter="design">
+                    Diseño
+                </button>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- WEB -->
+
+                <div class="col-md-4 project-item web">
+                    <div class="project-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfL-Leyd1Rp13h1HyEApEY-vFUt54iFN6Ycw&s">
+                        <div class="p-3">
+                            <h5>Web Project 01</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item web">
+                    <div class="project-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLsf6mCKkQ4Ns2IOGdnTL6oDQR4KNIAdUbw&s">
+                        <div class="p-3">
+                            <h5>Web Project 02</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item web">
+                    <div class="project-card">
+                        <img src="https://i.ytimg.com/vi/ukiGFmZ32YA/maxresdefault.jpg">
+                        <div class="p-3">
+                            <h5>Web Project 03</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- APPS -->
+
+                <div class="col-md-4 project-item app">
+                    <div class="project-card">
+                        <img src="./img/app_project_01.png">
+                        <div class="p-3">
+                            <h5>Detector de tipos de datos</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item app">
+                    <div class="project-card">
+                        <img src="https://images01.nicepagecdn.com/page/12/93/website-template-preview-1293170.jpg">
+                        <div class="p-3">
+                            <h5>App Project 02</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item app">
+                    <div class="project-card">
+                        <img src="https://www.mitec.cz/wp/wp-content/uploads/2025/06/TMX_001.png">
+                        <div class="p-3">
+                            <h5>App Project 03</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESIGN -->
+
+                <div class="col-md-4 project-item design">
+                    <div class="project-card">
+                        <img src="https://as2.ftcdn.net/jpg/02/75/03/05/1000_F_275030527_PNJeGbT0vASVdu5TXWLvqiIbGAwYUNFj.jpg">
+                        <div class="p-3">
+                            <h5>Design Project 01</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item design">
+                    <div class="project-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTooJuOvyQnfadbRxnHhJ-UMB-7cxXaNXPmng&s">
+                        <div class="p-3">
+                            <h5>Design Project 02</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 project-item design">
+                    <div class="project-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCK2HLpYJaBkuJKUqtmlSzNc9V7Ziw8U3wew&s">
+                        <div class="p-3">
+                            <h5>Design Project 03</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EXPERIENCIA ================= -->
+
+    <section id="experience" class="section-padding">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>🏢 Experiencia Laboral</h2>
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-lg-4">
+                    <div class="experience-card">
+                        <h4>Empacadora</h4>
+                        <h6>Aprezio</h6>
+                        <p>2025 - Actualidad</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="experience-card">
+                        <h4>Auxiliar de cocina</h4>
+                        <h6>Tacobell</h6>
+                        <p>2024</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="experience-card">
+                        <h4>Rol 3</h4>
+                        <h6>Empresa 3</h6>
+                        <p>2020 - 2022</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= VIDEOS ================= -->
+
+    <section id="videos" class="section-padding">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>🎥 Videos Destacados</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="video-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/yvuEc9ckpow"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h5 class="mt-3">
+                            🎥 App para detectar el tipo de dato
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="video-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/V_CKAglsiQc"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h5 class="mt-3">
+                            📱 CRUD .NET MAUI Parte #3
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="video-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/5KaP4W0kVEQ"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h5 class="mt-3">
+                            🤖 IA con Gemini API
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--
+            VIDEO EXTRA 1
+            VIDEO EXTRA 2
+            VIDEO EXTRA 3
+            VIDEO EXTRA 4
+            VIDEO EXTRA 5
+            VIDEO EXTRA 6
+            VIDEO EXTRA 7
+            VIDEO EXTRA 8
+            VIDEO EXTRA 9
+            -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section id="contact" class="section-padding">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="contact-card">
+
+                        <h2 class="text-center mb-4">
+                            📩 Contacto
+                        </h2>
+
+                        <form id="contactForm">
+
+                            <div class="mb-3">
+                                <label>👤 Nombre</label>
+                                <input type="text"
+                                    class="form-control"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>📧 Correo</label>
+                                <input type="email"
+                                    class="form-control"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>📞 Teléfono</label>
+                                <input type="tel"
+                                    class="form-control"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>✉️ Mensaje</label>
+                                <textarea rows="5"
+                                    class="form-control"
+                                    required></textarea>
+                            </div>
+
+                            <div class="text-center">
+
+                                <button class="btn btn-primary px-5">
+                                    Enviar
+                                </button>
+
+                            </div>
+
+                            <div id="successMessage"
+                                class="text-center mt-3 d-none">
+
+                                ✅ Mensaje enviado correctamente
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h4>🌐 Redes Sociales</h4>
+
+            <div class="social-links">
+
+                <a href="https://github.com/erolaenyjimenez" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@erolaenyjimeneznotengo02" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/erolaenynotengo13/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/18498603042" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+            <button id="scrollTopBtn" class="btn cyber-btn mt-4">
+                ⬆ Volver Arriba
+            </button>
+
+            <p class="mt-4">
+                © 2026 CyberPortfolio creado por Erolaeny Jimenez.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
